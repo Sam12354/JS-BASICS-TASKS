@@ -1,18 +1,18 @@
 function storeProvision(array, array2){
-    let allProducts = []
-    let products = {}
+    let allProducts = [];
+     let products = {};
 
     for(let i = 0; i < array.length; i += 2){
-        let curProduct = array[i]
-        let qty = Number(array[i + 1])
+        let curProduct = array[i];
+        let qty = Number(array[i + 1]);
 
         products = { curProduct, qty }
         allProducts.push(products)
     }
 
     for(let i = 0; i < array2.length; i += 2){
-        let curProduct = array2[i]
-        let qty = Number(array2[i + 1])
+        let curProduct = array2[i];
+        let qty = Number(array2[i + 1]);
 
         let findProduct = allProducts.find(p => p.curProduct === curProduct)
 
@@ -20,7 +20,7 @@ function storeProvision(array, array2){
             findProduct.qty += qty
         }else{
             products = { curProduct, qty }
-            allProducts.push(products)
+            allProducts.push(products);
         }
     }
 
