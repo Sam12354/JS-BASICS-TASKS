@@ -8,8 +8,8 @@ function inventory(array){
         let level = Number(commands[1]);
         let items = commands[2];
  
-        curHero = { hero, level, items }
-        allHeroes.push(curHero)
+        curHero = { hero, level, items };
+        allHeroes.push(curHero);
     }
  
     allHeroes.sort((a, b) => a.level - b.level);
