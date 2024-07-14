@@ -1,4 +1,4 @@
-function zad3(array){
+function manOWar (array){
     let pirateShipStatus = array.shift().split('>').map(Number);
     let warShipStatus = array.shift().split('>').map(Number);
     let maxhealth = Number(array.shift());
@@ -75,7 +75,7 @@ function zad3(array){
     console.log(`Warship status: ${statusWarShip}`);
 
 }
-zad3
+manOWar
 (["12>13>11>20>66",
 "12>22>33>44>55>32>18",
 "70",
