@@ -7,7 +7,7 @@ function treasureHunt(array) {
         let command = commands.shift();
  
         if (command === "Loot") {
-            // както вече казах по условие получаваш n на брой елементи и е необходим цикъл:
+            
             let item = '';
             for (let idx = 0; idx < commands.length; idx++) {
                 item = commands[idx];
@@ -15,15 +15,7 @@ function treasureHunt(array) {
                     arrayToChange.unshift(item);
                 }
             }
-            // if (!arrayToChange.includes(item1) && item1 !== undefined) {
-            //     arrayToChange.unshift(item1);
-            // }
-            // if (!arrayToChange.includes(item2) && item2 !== undefined) {
-            //     arrayToChange.unshift(item2);
-            // }
-            // if (!arrayToChange.includes(item3) && item3 !== undefined) {
-            //     arrayToChange.unshift(item3);
-            // }
+           
         } else if (command === "Drop") {
             let idx = Number(commands[0]); //тук поправих, защото вече ги няма дефинирани твоите item-и
             if (idx >= 0 && idx <= arrayToChange.length - 1) {
@@ -35,9 +27,7 @@ function treasureHunt(array) {
             let idx1 = Number(commands[0]);
  
             let itemsSteal = arrayToChange.splice(-idx1);
-            // if (itemsSteal.length > 0) {            - тази проверка от къде се взе, не виждам в условието някой да пита дали откраднатите
-            //     console.log(itemsSteal.join(", ")); - предмети са повече от 0 и при положение, че печаташ едно и също
-            // }                                       - какъв е смисъла, то поне да се печаташе нещо друго!?
+
             console.log(itemsSteal.join(", "));
         }
  
