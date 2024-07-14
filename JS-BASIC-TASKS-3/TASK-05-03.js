@@ -1,4 +1,4 @@
-function zad3(array){
+function inventory(array){
     let journal = array.shift().split(', ');
     let row = array.shift();
 
@@ -42,7 +42,7 @@ function zad3(array){
     }
     console.log(journal.join(', '));
 }
-zad3
+inventory
 ([
     'Iron, Sword',
     'Drop - Bronze',
