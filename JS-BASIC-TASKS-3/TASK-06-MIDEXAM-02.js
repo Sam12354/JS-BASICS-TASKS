@@ -17,7 +17,7 @@ function treasureHunt(array) {
             }
            
         } else if (command === "Drop") {
-            let idx = Number(commands[0]); //тук поправих, защото вече ги няма дефинирани твоите item-и
+            let idx = Number(commands[0]); 
             if (idx >= 0 && idx <= arrayToChange.length - 1) {
                 let itemRemove = arrayToChange.splice(idx, 1).join(" ");
  
