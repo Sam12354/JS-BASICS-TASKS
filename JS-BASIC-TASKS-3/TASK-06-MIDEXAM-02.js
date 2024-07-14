@@ -1,4 +1,4 @@
-function zad2(array) {
+function treasureHunt(array) {
     let arrayToChange = array.shift().split("|");
  
     let row = array.shift();
@@ -60,7 +60,7 @@ function zad2(array) {
     }
     
 }
-zad2
+treasureHunt
 (["Gold|Silver|Bronze|Medallion|Cup",
 "Loot Wood Gold Coins",
 "Loot Silver Pistol",
