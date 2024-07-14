@@ -1,4 +1,4 @@
-function zad1(array){
+function blackFlag(array){
     let daysLast = Number(array.shift());
     let dayPludner = Number(array.shift());
     let expectedPlunder = Number(array.shift());
@@ -27,7 +27,7 @@ function zad1(array){
     }
 
 }
-zad1
+blackFlag
 (["10",
 "20",
 "380"])
