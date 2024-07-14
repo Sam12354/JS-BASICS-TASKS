@@ -1,4 +1,4 @@
-function zad3(array){
+function students(array){
     let numberOfStudents = Number(array.shift());
     let totalLectures = Number(array.shift());
     let auditionalBonus = Number(array.shift());
@@ -24,7 +24,7 @@ function zad3(array){
     console.log(`Max Bonus: ${Math.ceil(studentMaxBonus)}.`);
     console.log(`The student has attended ${highAttendance} lectures.`);
 }
-zad3
+students
 ([
     '5',  '25', '30',
     '12', '19', '24',
