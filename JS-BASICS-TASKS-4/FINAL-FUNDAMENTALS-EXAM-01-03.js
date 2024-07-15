@@ -1,4 +1,4 @@
-function izpit(array){
+function bakeryShop(array){
     let row = array.shift();
     let curFood = {};
     let allFood = [];
@@ -71,7 +71,7 @@ function izpit(array){
     console.log(`All sold: ${allSold} goods`);
 }
  
-izpit
+bakeryShop
 ([
     "Receive 10 muffins",
 "Receive 23 bagels",
