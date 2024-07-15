@@ -1,32 +1,32 @@
-function zad1(input){
+function destinationMapper (input){
 
-    let pattern = /(=|\/)[A-Z][A-Za-z]{2,}\1/g
-    let destinations = []
+    let pattern = /(=|\/)[A-Z][A-Za-z]{2,}\1/g;
+    let destinations = [];
 
-    let exec = pattern.exec(input)
+    let exec = pattern.exec(input);
 
     while(exec !== null){
 
-        let destination = exec[0]
+        let destination = exec[0];
 
-        destination = destination.split(/[=/]/g).join('')
-        destinations.push(destination)
+        destination = destination.split(/[=/]/g).join('');
+        destinations.push(destination);
 
 
-        exec = pattern.exec(input)
+        exec = pattern.exec(input);
     }
 
     console.log(`Destinations: ${destinations.join(', ')}`);
 
-    let travelPoints = 0
+    let travelPoints = 0;
     for(let i = 0; i < destinations.length; i++){
-        let curDestination = destinations[i]
+        let curDestination = destinations[i];
         for(let letter of curDestination){
-            travelPoints += 1
+            travelPoints += 1;
         }
     }
     console.log(`Travel Points: ${travelPoints}`);
 
 }
-zad1
+destinationMapper
 ("=Hawai=/Cyprus/=Invalid/invalid==i5valid=/I5valid/=i=")
