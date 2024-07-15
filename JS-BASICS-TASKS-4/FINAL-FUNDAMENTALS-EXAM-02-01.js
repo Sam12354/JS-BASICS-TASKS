@@ -1,4 +1,4 @@
-function zad1(array){
+function worldTour(array){
     let travelStops = array.shift()
 
     let row = array.shift();
@@ -20,8 +20,7 @@ function zad1(array){
 
             if((startIndex >= 0 && startIndex <= travelStops.length - 1) && (endIndex >= 0 && endIndex <= travelStops.length - 1)){
                 travelStops = travelStops.slice(0 , startIndex) + travelStops.slice(endIndex + 1);
-            }
-            //така или иначе трябва да се отпечата, конзол лога не трябва да е в къдравите скоби горе
+            }  
             console.log(travelStops);
         }else if(row.includes('Switch')){
             let commands = row.split(':');
@@ -39,7 +38,7 @@ function zad1(array){
     }
     console.log(`Ready for world tour! Planned stops: ${travelStops}`);
 }
-zad1
+worldTour
 ([
     "Hawai::Cyprys-Greece",
 "Add Stop:7:Rome",
