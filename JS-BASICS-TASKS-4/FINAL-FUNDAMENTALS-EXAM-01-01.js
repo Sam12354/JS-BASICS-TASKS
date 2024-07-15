@@ -1,6 +1,6 @@
 function registration(array){
     let username = array.shift();
-    let row = array.shift()
+    let row = array.shift();
 
     while(row !== 'Registration'){
 
@@ -9,10 +9,10 @@ function registration(array){
             let kindLetters = commands[1]
 
             if(kindLetters === 'Upper'){
-                username = username.slice().toUpperCase()
+                username = username.slice().toUpperCase();
                 console.log(username);
             }else{
-                username = username.slice().toLowerCase()
+                username = username.slice().toLowerCase();
                 console.log(username);
             }
 
