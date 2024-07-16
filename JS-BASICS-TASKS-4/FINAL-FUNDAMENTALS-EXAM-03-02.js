@@ -4,7 +4,7 @@ function mirrorWords(array){
     let mirrorWordsFound = 0;
     let wordsFound = 0;
 
-    let mirrorWords = []
+    let mirrorWords = [];
     while(exec !== null){
         let word = exec[2];
         let mirrorWord = exec[3];
