@@ -1,22 +1,22 @@
-function zad2(array){
+function mirrorWords(array){
     let pattern = /(@|#)([A-Za-z]{3,})\1\1([A-Za-z]{3,})\1/g;
-    let exec = pattern.exec(array)
+    let exec = pattern.exec(array);
     let mirrorWordsFound = 0;
     let wordsFound = 0;
 
     let mirrorWords = []
     while(exec !== null){
-        let word = exec[2]
-        let mirrorWord = exec[3]
+        let word = exec[2];
+        let mirrorWord = exec[3];
         let reversedWord = mirrorWord.split('').reverse().join('');
 
         if(reversedWord === word){
             let wordsToPush = `${exec[2]} <=> ${exec[3]}`
             mirrorWords.push(wordsToPush);
         }else{
-            wordsFound++
+            wordsFound++;
         }
-        mirrorWordsFound++
+        mirrorWordsFound++;
 
 
         exec = pattern.exec(array);
@@ -36,7 +36,7 @@ function zad2(array){
         console.log('No mirror words!');
     }
 }
-zad2
+mirrorWords
 // ([
 //     '#lol#lol# @#God@@doG@# #abC@@Cba# @Xyu@#uyX#'
 // ])
