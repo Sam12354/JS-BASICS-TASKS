@@ -1,4 +1,4 @@
-function zad1(array) {
+function secretChat(array) {
  
     let concealMessage = array.shift();
  
@@ -44,7 +44,7 @@ function zad1(array) {
     console.log(`You have a new text message: ${concealMessage}`);
  
 }
-zad1
+secretChat
 ([
     'heVVodar!gniV',
     'ChangeAll:|:V:|:l',
