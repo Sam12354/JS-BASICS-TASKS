@@ -18,7 +18,7 @@ function secretChat(array) {
  
             while (concealMessage.includes(substring)) { 
                 
-                concealMessage = concealMessage.replace(substring, replacement);// - заменяме съвпадението с новия стринг!
+                concealMessage = concealMessage.replace(substring, replacement);
                 
             }
  
@@ -28,10 +28,10 @@ function secretChat(array) {
             let substring = operations[1];
  
             if (concealMessage.includes(substring)) {
-                //let index = concealMessage.indexOf(substring); - не ти трябват индекси, директно заместваш!!!
+                
                 let reversedSubstr = substring.split("").reverse().join("");
                 concealMessage = concealMessage.replace(substring, reversedSubstr);
-                //concealMessage = concealMessage.slice(0, index) + concealMessage.slice(index + substring.length) + reversedSubstr;
+               
  
                 console.log(concealMessage);
             } else {
