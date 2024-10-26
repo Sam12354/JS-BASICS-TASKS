@@ -1,0 +1,26 @@
+Main requirements for 100%:
+- Static Page
+- Dynamic Navigation (user session)
+- CRUD
+- User session (login/register/logout)
+
+Bonus requirements for > 100%:
+- Custom catalog
+- CRUD for related collection
+- Profile details page
+- Search
+- Pagination
+- Notifications
+
+Requirements for the playwright tests:
+1. Open package.json.
+2. Change the version of the "http-server" to: "14.1.1".
+3. Change the version of the "playwright-chromium" to "1.40".
+4. Open package-lock.json.
+5. Change the version of the "http-server" to "14.1.1".
+6. Change the version of the "playwright-chromium" to "1.40".
+7. Open new CMD terminal.
+8. Type: 'npm start'.
+9. Open new CMD terminal again.
+10. Type: 'npm test'.
+11. Good luck! :)
