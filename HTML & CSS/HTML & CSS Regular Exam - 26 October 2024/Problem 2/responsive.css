@@ -1,0 +1,76 @@
+@media (max-width: 600px) {
+
+    .home-cards-container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .home-cards-container span {
+        white-space: nowrap;
+    }
+
+    .home-stats {
+        display: flex;
+        flex-direction: column;  
+        margin-top: 65em;
+    }
+
+    .home-cards-container .home-feature-card .home-text05,
+    .home-cards-container .home-feature-card1 .home-text06,
+    .home-cards-container .home-feature-card2 .home-text07 {
+        display: block; 
+        white-space: normal;
+        width: 80%;
+        
+    }
+
+    .home-feature-card {
+        width: 80%;
+    }
+
+    .home-feature-card1 {
+        width: 80%;
+    }
+
+    .home-feature-card2 {
+        width: 80%;
+    }
+
+    .home-container {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .home-hero {
+        display: flex; 
+        flex-direction: column-reverse;
+        /* snimkata taka otide nai otgore */
+        align-items: center;
+    }
+
+    .home-hero img {
+        width: 100%;
+    }
+
+    .home-hero .home-heading .home-text {
+        align-items: start;
+        white-space: nowrap;
+    }
+    
+    .home-hero-text-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .home-hero-text-container button {
+        align-self: center;
+        /* ot golqm butona stava maluk */
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+
+
+}
