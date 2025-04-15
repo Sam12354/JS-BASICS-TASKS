@@ -74,3 +74,8 @@ button {
     background-color: #42aa59;
     margin-right: 0.5em;
 }
+
+.start:hover {
+    background-color: #000000;
+    color: white;
+}
