@@ -1,0 +1,25 @@
+@media (max-width: 600px) {
+
+    header nav {
+        margin: auto;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5em;
+        align-items: center;
+    }
+
+    .choose-us ul {
+        flex-direction: column;
+        gap: 1em
+    }
+
+    .team-description ul {
+        justify-content: center;
+        gap: 2em;
+    }
+
+}
