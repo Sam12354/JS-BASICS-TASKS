@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 'Agbalumo', sans-serif;
+}
+
+body {
+    background-color: #202020;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 27em;
+    margin-left: 27em;
+}
+
+.main-div {
+    background-color: white;
+    padding: 1em;
+}
+
+.body-div {
+    border: solid #090909;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d5ebea;
+    margin-bottom: 2em;
+}
+
+.header h1 {
+    padding-top: 1em;
+    font-size: 3em;
+}
+
+.header p::before {
+    content: '';
+    width: 70em;
+    display: block;
+    height: 0.2em;
+    background-color: black;
+    margin-right: 3em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.header p::after {
+    content: '';
+    width: 70em;
+    display: block;
+    height: 0.2em;
+    background-color: black;
+    margin-right: 3em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.header p {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-div img {
+    width: 300px;
+    margin-bottom: 2em;
+}
+
+.image-div p {
+    font-size: 12px;
+    max-width: 50ch;
+}
+
+.image-div {
+    padding: 1em;
+    border: solid black;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.information h4 {
+    padding-bottom: 0.5em;
+    margin-right: 3em;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 1em;
+    color: #21140b;
+    margin-top: 1em;
+}
+
+.facts-us {
+    background-color: #090909;
+    width: 45%;
+    color: #fdfdfd;
+    font-size: 28px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #d5ebea;
+    padding-top: 1em;
+    padding-left: 2.5em;
+    padding-bottom: 0.7em;
+}
+
+.population, .area, .capital, .gov {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    padding-bottom: 0.5em;
+}
