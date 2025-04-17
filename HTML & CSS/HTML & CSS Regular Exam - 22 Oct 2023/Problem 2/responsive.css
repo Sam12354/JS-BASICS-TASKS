@@ -1,0 +1,56 @@
+@media (max-width: 600px) {
+
+    .home-navbar1 {
+        display: none;
+    }
+
+    .home-cards-container{
+        width: 95%;
+    }
+
+    .category-card-image {
+        width: 230px;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-content {
+        padding-top: 2em;
+    }
+
+    .home-text30 {
+        width: 538px;
+    }
+
+    .home-content {
+        margin-bottom: 1em;
+    }
+
+    .home-left4 {
+        padding-bottom: 2em;
+    }
+
+    .home-image6 {
+        width: 100%;
+    }
+
+    .blog-post-card-image {
+        width: 132%;
+    }
+
+    .home-footer1 {
+        flex-direction: column-reverse;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-container12 {
+        margin-bottom: 2em;
+    }
+
+}
