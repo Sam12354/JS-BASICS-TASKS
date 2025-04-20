@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100dvh;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    gap: 68em;
+}
+
+.navigation img {
+    width: 40px;
+}
+
+nav a {
+    padding-right: 0.7em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-left: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2em;
+}
+
+.main img {
+    width: 300px;
+    margin-right: 5em;
+    height: auto;
+}
+
+.main-info p {
+    padding-top: 0.8em;
+    font-size: 13px;
+}
+
+.copyright {
+    background-color: #191414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 12px;
+    color: white;
+    margin-top: 4em;
+}
+
+.header {
+    background: linear-gradient(to bottom, #1db954 50%, white 50%);
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.plans {
+    color: white;
+    background-color: #1db954;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.left h2, .right h2 {
+    font-family: 'Lato', sans-serif;
+    color: #54546d;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.left ul, .right ul {
+    list-style-type: circle;
+    padding-left: 2em;
+    color: #515174;
+    padding-bottom: 1em;
+    max-width: 42ch;
+}
+
+.left ul li, .right ul li {
+    padding-bottom: 0.5em;
+}
+
+.left h2 {
+    padding-bottom: 1.8em;
+}
+
+.right h2 {
+    padding-bottom: 1em;
+}
+
+.color-green {
+    width: 40%;
+    margin-left: 9em;
+    margin-bottom: 1em;
+    color: white;
+    background-color: #1db954;
+    border: none;
+    border-radius: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.price {
+    background-color: #191414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.price button {
+    background-color: #191414;
+    border: none;
+    color: white;
+    padding: 0.5em;
+}
+
+.color-first::after {
+    content: '|';
+    color: white;
+    margin-left: 0.5em;
+}
+
+.color-black-right {
+    background-color: #191414;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    padding: 0.5em;
+    border: none;
+}
+
+.footer h2 {
+    padding-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.premium {
+    margin-bottom: 1em;
+    font-size: 12px;
+    padding-bottom: 0.5em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timetable {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.gray {
+    background-color: #cccbcb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.7em;
+    justify-content: space-between;
+}
+
+.green {
+    background-color: #81d8a0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.7em;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    padding-right: 3em;
+}
+
+.fa-check, .fa-times {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.green p, .gray p {
+    margin-right: 30em
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: start;
+}
+
+.left {
+    position: absolute;
+    left: 12%;
+}
+
+.right {
+    position: absolute;
+    right: 12%;
+}
+
+.header img {
+    width: 45%;
+}
